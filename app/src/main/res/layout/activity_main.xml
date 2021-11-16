@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/mainbg"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <Button android:id="@+id/btnLearn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Learn"
+        android:background="@color/white"
+        android:layout_margin="15dp"/>
+
+    <Button
+        android:id="@+id/main_btnPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:text="Play"
+        android:layout_margin="15dp"/>
+
+    <Button
+        android:id="@+id/main_btnRank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:text="Rank"
+        android:layout_margin="15dp"/>
+
+    <Button
+        android:id="@+id/main_btnSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:text="Setting"
+        android:layout_margin="15dp"/>
+    <Button
+        android:id="@+id/main_btnQuit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:text="Quit"
+        android:textAllCaps="false"
+        android:layout_margin="15dp"/>
+
+</LinearLayout>

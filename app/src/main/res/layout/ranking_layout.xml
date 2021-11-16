@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_margin="15dp"
+    android:layout_marginVertical="3dp"
+    android:layout_marginHorizontal="7dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#edf7ff"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/r1_ranking"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:text="#1"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16sp"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/r1_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/r1_name"
+                android:layout_alignParentEnd="true"
+                android:paddingEnd="10dp"
+                android:textColor="@color/black"
+                android:text="Name"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/r1_score"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:text="12"
+            android:gravity="center"
+            android:layout_marginLeft="-60dp"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

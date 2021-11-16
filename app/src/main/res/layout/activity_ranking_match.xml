@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blueblackbg"
+    tools:context=".RankingMatchActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_matchWordRanking"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header"
+        android:layout_marginTop="-15dp">
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorRanking"
+        app:itemBackground="@color/colorRanking"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:labelVisibilityMode="labeled"
+        android:layout_alignParentBottom="false"
+        app:menu="@menu/ranking_menu" />
+    <!--b0c4de-->
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/bottomNav"
+        android:layout_marginHorizontal="7dp"
+        android:layout_marginVertical="3dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        <!--android:background="#edf7ff"-->
+
+
+        <TextView
+            android:id="@+id/r1_ranking"
+            android:layout_width="65dp"
+            android:layout_height="30sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="Rank"
+            android:textColor="#FFD700"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16sp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/r1_name"
+                android:layout_width="match_parent"
+                android:layout_height="30sp"
+                android:layout_alignRight="@+id/r1_name"
+                android:layout_alignParentEnd="true"
+                android:paddingEnd="10dp"
+                android:text="Name"
+                android:textColor="#FFD700"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/r1_score"
+            android:layout_width="55dp"
+            android:layout_height="30sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="-60dp"
+            android:text="Score"
+            android:textColor="#FFD700"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>

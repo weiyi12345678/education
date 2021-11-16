@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GameMemoryActivity"
+    android:gravity="center"
+    android:background="@drawable/memorybg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2">
+
+        <TextView
+            android:id="@+id/game_tv_timecounter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginEnd="20sp"
+            android:layout_marginBottom="20sp"
+            android:gravity="center"
+            android:text="2:00"
+            android:textColor="#ffff00"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/memory_tv_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginEnd="10sp"
+            android:layout_marginBottom="10sp"
+            android:text="Score: 0"
+            android:textColor="#ffff00"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/memory_card_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="20dp">
+
+            <ImageView
+                android:id="@+id/memory_hidden_iv1"
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:adjustViewBounds="true"
+                android:background="#000000"
+                android:scaleType="centerCrop"
+                android:src="@drawable/white_2" />
+
+            <ImageView
+                android:id="@+id/memory_iv_1"
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/white_2" />
+
+            <TextView
+                android:id="@+id/memory_tv_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Hello"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/memory_card_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="20dp"
+            >
+
+            <ImageView
+                android:id="@+id/memory_hidden_iv3"
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/white_2" />
+
+            <ImageView
+                android:id="@+id/memory_iv_3"
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/white_2" />
+
+            <TextView
+                android:id="@+id/memory_tv_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Hello"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/memory_card_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="20dp">
+
+            <ImageView
+                android:id="@+id/memory_hidden_iv5"
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/white_2" />
+
+            <ImageView
+                android:id="@+id/memory_iv_5"
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/white_2" />
+
+            <TextView
+                android:id="@+id/memory_tv_5"
+                :text="Hello"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="-150dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/memory_card_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="20dp">
+
+            <ImageView
+                android:id="@+id/memory_hidden_iv2"
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:src="@drawable/white_2"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"/>
+
+            <ImageView
+                android:id="@+id/memory_iv_2"
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/white_2" />
+
+            <TextView
+                android:id="@+id/memory_tv_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Hello"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/memory_card_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="20dp">
+
+            <ImageView
+                android:id="@+id/memory_hidden_iv4"
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:src="@drawable/white_2"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"/>
+
+            <ImageView
+                android:id="@+id/memory_iv_4"
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:src="@drawable/white_2"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"/>
+
+            <TextView
+                android:id="@+id/memory_tv_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Hello"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/memory_card_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="20dp">
+
+            <ImageView
+                android:id="@+id/memory_hidden_iv6"
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:src="@drawable/white_2"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"/>
+
+            <ImageView
+                android:id="@+id/memory_iv_6"
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:src="@drawable/white_2"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"/>
+
+            <TextView
+                android:id="@+id/memory_tv_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Hello"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

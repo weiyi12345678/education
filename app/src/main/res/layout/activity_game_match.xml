@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameMatchActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/matchbg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2">
+
+        <TextView
+            android:id="@+id/game_tv_timecounter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginEnd="20sp"
+            android:layout_marginBottom="20sp"
+            android:gravity="center"
+            android:text="1:00"
+            android:textColor="#8b4513"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/match_tv_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginEnd="10sp"
+            android:layout_marginBottom="10sp"
+            android:text="Score: 0"
+            android:textColor="#8b4513"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/match_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30sp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/match_iv_question"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/white_2" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:padding="50dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            >
+            <RelativeLayout
+                android:id="@+id/match_card_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:layout_weight="1"
+                >
+                <ImageView
+                    android:id="@+id/match_iv_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50sp"
+                    android:src="@drawable/white_2"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    />
+                <TextView
+                    android:id="@+id/match_tv_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Hello"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/match_card_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:layout_weight="1"
+                >
+                <ImageView
+                    android:id="@+id/match_iv_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50sp"
+                    android:src="@drawable/white_2"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    />
+                <TextView
+                    android:id="@+id/match_tv_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Hello"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/match_card_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:layout_weight="1"
+                >
+                <ImageView
+                    android:id="@+id/match_iv_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50sp"
+                    android:src="@drawable/white_2"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    />
+                <TextView
+                    android:id="@+id/match_tv_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Hello"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/match_card_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:layout_weight="1"
+                >
+                <ImageView
+                    android:id="@+id/match_iv_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50sp"
+                    android:src="@drawable/white_2"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    />
+                <TextView
+                    android:id="@+id/match_tv_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Hello"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/match_card_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:layout_weight="1"
+                >
+                <ImageView
+                    android:id="@+id/match_iv_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50sp"
+                    android:src="@drawable/white_2"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    />
+                <TextView
+                    android:id="@+id/match_tv_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Hello"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
